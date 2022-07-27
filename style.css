@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Merriweather&display=swap');
+
+body {
+  background: rgb(240, 235, 227);
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+
+h1, h2{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.flexcontainer {
+  display:flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
+
+.flexitem1 {
+  background-color: #fbfafa;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px rgb(240, 235, 227 / 20%);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.card-white {
+  background-color: #fbfafa;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0px 0px 24px rgb(240, 235, 227 / 20%);
+  width: 100%;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline a {
+  font-size: 32px;
+  color: rgb(240, 235, 227);
+}
+
+img.img-circle {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  object-position: 100% 50%;
+  box-shadow: 6px 6px 6px rgb(240, 235, 227 / 30%);
+  padding: 2px;
+  padding-top: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+
+@media (min-width: 961px){
+
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 87%;
+  }
+}
